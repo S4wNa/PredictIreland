@@ -1,0 +1,94 @@
+section {
+  width: 100%;
+  /* height: 30rem; */
+}
+.estimator-container {
+  background-color: #fff;
+  width: 72rem;
+  height: 28rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+  border-radius: 14px;
+  transform: translateY(-10%);
+
+  box-shadow: 5px 1px 15px rgba(0, 0, 0, 0.1);
+}
+.estimator-container h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #e2bd2a;
+}
+.second-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.box-estimator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.box-estimator label {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #333;
+}
+.box-estimator select {
+  padding: 1rem 5rem;
+  margin: 1rem 2rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.box-estimator input {
+  padding: 1rem 3.8rem;
+  margin: 1rem 2rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 1px solid #333;
+}
+
+.estimator-container button {
+  margin-top: 2rem;
+  padding: 1rem 5rem;
+  color: #fff;
+  background-color: #e2bd2a;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.estimated-price {
+  width: 50rem;
+  height: 17rem;
+  text-align: center;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 14px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 6.5rem;
+}
+.estimated-price h2 {
+  color: #333;
+}
+.estimated-price span {
+  color: #e2bd2a;
+  font-size: 2.5rem;
+  margin: 1rem 0;
+}
+#price-range {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}

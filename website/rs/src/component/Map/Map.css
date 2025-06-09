@@ -1,0 +1,70 @@
+#map-section {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#Map-price {
+  text-align: center;
+  color: #363228;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  margin-bottom: 2rem;
+}
+
+#map {
+  position: relative;
+  height: 500px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Styles pour le slider */
+.noUi-connect {
+  background: #e2bd2a;
+}
+
+.noUi-handle {
+  border: 2px solid #e2bd2a;
+  background: #fff;
+  cursor: pointer;
+}
+
+.noUi-handle:before,
+.noUi-handle:after {
+  background: #e2bd2a;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  #map-section {
+    padding: 1rem;
+  }
+
+  #map {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #map-section {
+    padding: 0.5rem;
+  }
+
+  #map {
+    height: 300px;
+  }
+
+  /* Ajustement du slider pour mobile */
+  .noUi-handle {
+    width: 20px !important;
+    height: 20px !important;
+    right: -10px !important;
+  }
+
+  .noUi-handle:before,
+  .noUi-handle:after {
+    width: 8px;
+    height: 8px;
+  }
+}

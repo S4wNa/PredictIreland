@@ -1,0 +1,67 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# Fichier .gitignore principal pour le projet Real Estate
+
+# --- Environnement Virtuel Python ---
+# Ignorer le dossier de l'environnement virtuel
+venv/
+
+# --- Fichiers Python Cache et Bytecode ---
+# Ignorer les dossiers __pycache__ générés partout
+__pycache__/
+# Ignorer les fichiers bytecode compilés
+*.py[cod]
+*$py.class
+
+# Ignorer les artefacts générés du modèle ( JSON)
+server/artifacts/*.pkl
+
+
+# --- Dépendances Node.js ---
+# Ignorer le dossier des modules Node (très volumineux)
+website/node_modules/
+
+# --- Fichiers de Build Frontend (Optionnel) ---
+# Si votre processus de build React génère un dossier 'build' dans 'website'
+# et que vous ne le déployez pas directement depuis Git, ignorez-le.
+website/build/
+
+# --- Fichiers de Configuration Sensibles et Environnement ---
+# Ignorer les fichiers .env contenant des variables d'environnement locales
+# (secrets, clés API, mots de passe) à la racine ou dans les sous-dossiers
+# Le ** permet de chercher dans tous les sous-dossiers
+**/.env
+**/.env.*
+# MAIS garder les fichiers d'exemple (souvent nommés .env.example ou .env.sample)
+!**/.env.example
+!**/.env.sample
+
+# --- Fichiers Logs ---
+# Ignorer les fichiers de log
+*.log
+logs/
+*.log.*
+
+# --- Fichiers IDE et Système d'Exploitation ---
+# Fichiers macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Fichiers Windows Thumbs et Desktop
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Fichiers IDE (ajoutez/modifiez selon votre éditeur)
+.idea/             # IntelliJ
+.vscode/           # Visual Studio Code
+*.sublime-project
+*.sublime-workspace
+nbproject/         # NetBeans
+*.swp              # Vim swap files
+
+# --- Fichiers Divers ---
+# Fichiers temporaires
+*.tmp
+*~

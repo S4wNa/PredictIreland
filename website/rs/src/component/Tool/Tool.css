@@ -1,0 +1,51 @@
+.tool-container {
+  margin: 0 auto;
+  width: 72rem;
+  height: 22rem;
+  border-radius: 14px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  background-color: #eede9f;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tool-container h2 {
+  color: #e2bd2a;
+  padding-bottom: 1.5rem;
+}
+.tools {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.tools span {
+  font-size: 3rem;
+}
+.tools h4 {
+  font-size: 1.5rem;
+}
+.tool {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  width: 20rem;
+  border-radius: 6px;
+  padding: 10px;
+  transition: transform 0.33s ease-in-out;
+}
+
+.tool span {
+  margin: 1rem 0;
+}
+.tool h4,
+.tool p {
+  margin-bottom: 1rem;
+}
+.tool:hover,
+.tool:active {
+  transform: translateY(-20px);
+}
