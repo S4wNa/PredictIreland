@@ -9,8 +9,11 @@ html {
   box-shadow: 0 15px 10px rgba(0, 0, 0, 0.1);
   height: 5rem;
   background-color: #fff;
-  position: relative;
-  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 }
 
 .navbar li {
@@ -79,11 +82,11 @@ html {
   background-image: url(1200x798.jpg);
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  scroll-margin-top: 5rem;
 }
 
 .container::before {
@@ -95,7 +98,7 @@ html {
   bottom: 0;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 form {
@@ -212,7 +215,10 @@ button:hover {
   }
   .navbar {
     height: 16rem;
-    margin-bottom: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
     flex-direction: column;
   }
@@ -239,12 +245,14 @@ button:hover {
   .error-message {
     width: 80%;
   }
+  .container {
+    padding-top: 16rem;
+  }
 }
 
 @media screen and (max-width: 412px) {
   .container {
-    height: 100vh;
-    width: 110%;
+    padding-top: 16rem;
   }
   .navbar {
     width: 110%;
@@ -263,8 +271,7 @@ button:hover {
 
 @media screen and (max-width: 390px) {
   .container {
-    height: 100vh;
-    width: 105%;
+    padding-top: 16rem;
   }
   .navbar {
     width: 105%;
@@ -273,8 +280,7 @@ button:hover {
 
 @media screen and (max-width: 375px) {
   .container {
-    height: 100vh;
-    width: 105%;
+    padding-top: 16rem;
   }
   .navbar {
     width: 105%;

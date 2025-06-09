@@ -16,7 +16,7 @@ export default function ContactPage() {
 
   function handleChange(e) {
     setValue({ ...value, [e.target.name]: e.target.value });
-    setError(null); // Clear error when user makes changes
+    setError(null);
   }
 
   async function handleSubmit(e) {
