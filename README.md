@@ -1,13 +1,12 @@
-# Projet de Prédiction de Prix Immobilier en Irlande
+# Irish Property Price Prediction Project
 
-Bienvenue dans le projet de prédiction de prix immobilier en Irlande ! Cette application web full-stack utilise un modèle de Machine Learning pour estimer le prix de biens immobiliers en fonction de leurs caractéristiques et propose une interface utilisateur interactive ainsi qu'un formulaire de contact.
+Welcome to the Irish Property Price Prediction Project! This full-stack web application uses a Machine Learning model to estimate the price of properties based on their characteristics and features an interactive user interface and contact form.
 
-## Fonctionnalités
+## Features
 
-- **Prédiction de Prix :** Estime le prix d'un bien immobilier irlandais basé sur des caractéristiques telles que la localisation, le type de propriété, la surface, le classement énergétique (BER), etc.
-- **Interface Web :** Une interface utilisateur développée avec React permet de saisir facilement les caractéristiques et d'afficher le prix prédit.
-- **Formulaire de Contact :** Permet aux utilisateurs d'envoyer des messages via un formulaire, traités par le backend Flask qui envoie un email.
-- **(Futures fonctionnalités envisagées) :** Carte des prix, analyse des tendances.
-
+- **Price Prediction :** Estimates the price of an Irish property based on characteristics such as location, property type, surface area, energy rating (BER), etc.
+- **Web interface :** A user interface developed with React makes it easy to enter characteristics and display the predicted price.
+- **Contact Form :** Allows users to send messages via a form, processed by the Flask backend, which sends an email.
+(Future functionalities envisaged) : Price map, trend analysis.
 
 the website works and the server with the model too but when i deploy it , there a problem with the server anyway here's the front part site: https://predictireland.netlify.app/
